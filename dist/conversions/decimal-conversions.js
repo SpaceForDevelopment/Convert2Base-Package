@@ -25,13 +25,13 @@ function decToOct(decimalNumber) {
 }
 exports.decToOct = decToOct;
 function decToHex(decimalNumber) {
-    let hexNumber = '';
+    let hexadecimalNumber = '';
     let quotient = parseInt(decimalNumber);
     (0, decimal_validation_1.decimalNumberValidation)(decimalNumber);
     while (quotient !== 0) {
-        hexNumber = (quotient % 16).toString(16).toUpperCase() + hexNumber;
+        hexadecimalNumber = (quotient % 16).toString(16).toUpperCase() + hexadecimalNumber;
         quotient = Math.floor(quotient / 16);
     }
-    return hexNumber;
+    return hexadecimalNumber;
 }
 exports.decToHex = decToHex;

@@ -5,12 +5,8 @@ const binary_validation_1 = require("../validations/binary-validation");
 function binToOct(binaryNumber) {
     let octalNumber = '';
     let decimalNumber = 0;
-    let powerOfTwo = 0;
     (0, binary_validation_1.binaryNumberValidation)(binaryNumber);
-    for (let i = binaryNumber.length - 1; i >= 0; i--) {
-        decimalNumber += parseInt(binaryNumber[i]) * (2 ** powerOfTwo);
-        powerOfTwo++;
-    }
+    decimalNumber = parseInt(binToDec(binaryNumber));
     while (decimalNumber !== 0) {
         octalNumber = (decimalNumber % 8).toString() + octalNumber;
         decimalNumber = Math.floor(decimalNumber / 8);
@@ -31,13 +27,10 @@ function binToDec(binaryNumber) {
 exports.binToDec = binToDec;
 function binToHex(binaryNumber) {
     let decimalNumber = 0;
-    let powerOfTwo = 0;
+    let hexadecimalNumber = '';
     (0, binary_validation_1.binaryNumberValidation)(binaryNumber);
-    for (let i = binaryNumber.length - 1; i >= 0; i--) {
-        decimalNumber += parseInt(binaryNumber[i]) * (2 ** powerOfTwo);
-        powerOfTwo++;
-    }
-    const hexNumber = decimalNumber.toString(16);
-    return hexNumber.toUpperCase();
+    decimalNumber = parseInt(binToDec(binaryNumber));
+    hexadecimalNumber = decimalNumber.toString(16);
+    return hexadecimalNumber.toUpperCase();
 }
 exports.binToHex = binToHex;
