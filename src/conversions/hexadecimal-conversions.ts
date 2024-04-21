@@ -3,12 +3,13 @@ import { binToOct } from './binary-conversions';
 import { decToBin } from './decimal-conversions';
 
 export function hexToBin(hexadecimalNumber: string): string {
+    let digit = 0;
     let binaryNumber = '';
     
     hexadecimalNumberValidation(hexadecimalNumber);
 
     for (let i = 0; i < hexadecimalNumber.length; i++) {
-        const digit = parseInt(hexadecimalNumber[i], 16);
+        digit = parseInt(hexadecimalNumber[i], 16);
         binaryNumber += decToBin(digit.toString()).padStart(4, '0');
     }
 
@@ -16,11 +17,13 @@ export function hexToBin(hexadecimalNumber: string): string {
 }
 
 export function hexToOct(hexadecimalNumber: string): string {
+    let binaryNumber = '';
     let octalNumber = '';
     
     hexadecimalNumberValidation(hexadecimalNumber);
 
-    const binaryNumber = hexToBin(hexadecimalNumber);
+    binaryNumber = hexToBin(hexadecimalNumber);
+    
     octalNumber = binToOct(binaryNumber);
 
     return octalNumber;

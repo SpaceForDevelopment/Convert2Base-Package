@@ -3,14 +3,10 @@ import { binaryNumberValidation } from '../validations/binary-validation';
 export function binToOct(binaryNumber: string): string {
     let octalNumber = '';
     let decimalNumber = 0;
-    let powerOfTwo = 0;
 
     binaryNumberValidation(binaryNumber);
 
-    for (let i = binaryNumber.length - 1; i >= 0; i--) {
-        decimalNumber += parseInt(binaryNumber[i]) * (2 ** powerOfTwo);
-        powerOfTwo++;
-    }
+    decimalNumber = parseInt(binToDec(binaryNumber));
 
     while (decimalNumber !== 0) {
         octalNumber = (decimalNumber % 8).toString() + octalNumber;
@@ -36,16 +32,13 @@ export function binToDec(binaryNumber: string): string {
 
 export function binToHex(binaryNumber: string): string {
     let decimalNumber = 0;
-    let powerOfTwo = 0;
+    let hexadecimalNumber = '';
     
     binaryNumberValidation(binaryNumber);
 
-    for (let i = binaryNumber.length - 1; i >= 0; i--) {
-        decimalNumber += parseInt(binaryNumber[i]) * (2 ** powerOfTwo);
-        powerOfTwo++;
-    }
+    decimalNumber = parseInt(binToDec(binaryNumber));
 
-    const hexNumber = decimalNumber.toString(16);
+    hexadecimalNumber = decimalNumber.toString(16);
 
-    return hexNumber.toUpperCase();
+    return hexadecimalNumber.toUpperCase();
 }
