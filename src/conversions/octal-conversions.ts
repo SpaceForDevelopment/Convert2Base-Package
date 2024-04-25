@@ -8,7 +8,6 @@ export function octToBin(octalNumber: string): string {
     octalNumberValidation(octalNumber);
 
     decimalNumber = parseInt(octToDec(octalNumber));
-
     binaryNumber = decToBin(decimalNumber.toString());
 
     return binaryNumber;
@@ -35,7 +34,6 @@ export function octToHex(octalNumber: string): string {
     octalNumberValidation(octalNumber);
 
     decimalNumber = parseInt(octToDec(octalNumber));
-
     hexadecimalNumber = decimalNumber.toString(16);
 
     return hexadecimalNumber.toUpperCase();

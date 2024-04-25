@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.binToHex = exports.binToDec = exports.binToOct = void 0;
 const binary_validation_1 = require("../validations/binary-validation");
 function binToOct(binaryNumber) {
-    let octalNumber = '';
     let decimalNumber = 0;
+    let octalNumber = '';
     (0, binary_validation_1.binaryNumberValidation)(binaryNumber);
     decimalNumber = parseInt(binToDec(binaryNumber));
     while (decimalNumber !== 0) {

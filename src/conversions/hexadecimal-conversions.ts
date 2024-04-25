@@ -23,7 +23,6 @@ export function hexToOct(hexadecimalNumber: string): string {
     hexadecimalNumberValidation(hexadecimalNumber);
 
     binaryNumber = hexToBin(hexadecimalNumber);
-    
     octalNumber = binToOct(binaryNumber);
 
     return octalNumber;

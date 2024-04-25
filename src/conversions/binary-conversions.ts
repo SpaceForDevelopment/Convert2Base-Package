@@ -1,8 +1,8 @@
 import { binaryNumberValidation } from '../validations/binary-validation';
 
 export function binToOct(binaryNumber: string): string {
-    let octalNumber = '';
     let decimalNumber = 0;
+    let octalNumber = '';
 
     binaryNumberValidation(binaryNumber);
 
@@ -37,7 +37,6 @@ export function binToHex(binaryNumber: string): string {
     binaryNumberValidation(binaryNumber);
 
     decimalNumber = parseInt(binToDec(binaryNumber));
-
     hexadecimalNumber = decimalNumber.toString(16);
 
     return hexadecimalNumber.toUpperCase();
