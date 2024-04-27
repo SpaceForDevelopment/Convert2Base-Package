@@ -1,1 +1,1 @@
-export declare function octalNumberValidation(octalNumber: string): void;
+export declare const octalNumberValidation: (octalNumber: string) => void;

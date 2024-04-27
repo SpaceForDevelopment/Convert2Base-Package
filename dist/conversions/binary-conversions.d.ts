@@ -1,3 +1,3 @@
-export declare function binToOct(binaryNumber: string): string;
-export declare function binToDec(binaryNumber: string): string;
-export declare function binToHex(binaryNumber: string): string;
+export declare const binToOct: (binaryNumber: string) => string;
+export declare const binToDec: (binaryNumber: string) => string;
+export declare const binToHex: (binaryNumber: string) => string;

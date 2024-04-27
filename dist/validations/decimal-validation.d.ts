@@ -1,1 +1,1 @@
-export declare function decimalNumberValidation(decimalNumber: string): void;
+export declare const decimalNumberValidation: (decimalNumber: string) => void;

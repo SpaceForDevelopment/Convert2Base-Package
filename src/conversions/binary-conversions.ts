@@ -1,6 +1,6 @@
 import { binaryNumberValidation } from '../validations/binary-validation';
 
-export function binToOct(binaryNumber: string): string {
+export const binToOct = (binaryNumber: string): string => {
     let decimalNumber = 0;
     let octalNumber = '';
 
@@ -14,9 +14,9 @@ export function binToOct(binaryNumber: string): string {
     }
 
     return octalNumber;
-}
+};
 
-export function binToDec(binaryNumber: string): string {
+export const binToDec = (binaryNumber: string): string => {
     let decimalNumber = 0;
     let powerOfTwo = 0;
 
@@ -28,9 +28,9 @@ export function binToDec(binaryNumber: string): string {
     }
 
     return decimalNumber.toString();
-}
+};
 
-export function binToHex(binaryNumber: string): string {
+export const binToHex = (binaryNumber: string): string => {
     let decimalNumber = 0;
     let hexadecimalNumber = '';
     
@@ -40,4 +40,4 @@ export function binToHex(binaryNumber: string): string {
     hexadecimalNumber = decimalNumber.toString(16);
 
     return hexadecimalNumber.toUpperCase();
-}
+};

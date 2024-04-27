@@ -1,1 +1,1 @@
-export declare function hexadecimalNumberValidation(hexadecimalNumber: string): void;
+export declare const hexadecimalNumberValidation: (hexadecimalNumber: string) => void;

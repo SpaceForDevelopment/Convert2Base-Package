@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.decToHex = exports.decToOct = exports.decToBin = void 0;
 const decimal_validation_1 = require("../validations/decimal-validation");
-function decToBin(decimalNumber) {
+const decToBin = (decimalNumber) => {
     let binaryNumber = '';
     let quotient = parseInt(decimalNumber);
     (0, decimal_validation_1.decimalNumberValidation)(decimalNumber);
@@ -11,9 +11,9 @@ function decToBin(decimalNumber) {
         quotient = Math.floor(quotient / 2);
     }
     return binaryNumber;
-}
+};
 exports.decToBin = decToBin;
-function decToOct(decimalNumber) {
+const decToOct = (decimalNumber) => {
     let octalNumber = '';
     let quotient = parseInt(decimalNumber);
     (0, decimal_validation_1.decimalNumberValidation)(decimalNumber);
@@ -22,9 +22,9 @@ function decToOct(decimalNumber) {
         quotient = Math.floor(quotient / 8);
     }
     return octalNumber;
-}
+};
 exports.decToOct = decToOct;
-function decToHex(decimalNumber) {
+const decToHex = (decimalNumber) => {
     let hexadecimalNumber = '';
     let quotient = parseInt(decimalNumber);
     (0, decimal_validation_1.decimalNumberValidation)(decimalNumber);
@@ -33,5 +33,5 @@ function decToHex(decimalNumber) {
         quotient = Math.floor(quotient / 16);
     }
     return hexadecimalNumber;
-}
+};
 exports.decToHex = decToHex;

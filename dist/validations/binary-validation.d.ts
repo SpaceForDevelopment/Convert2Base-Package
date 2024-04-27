@@ -1,1 +1,1 @@
-export declare function binaryNumberValidation(binaryNumber: string): void;
+export declare const binaryNumberValidation: (binaryNumber: string) => void;

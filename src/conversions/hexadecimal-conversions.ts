@@ -2,7 +2,7 @@ import { hexadecimalNumberValidation } from '../validations/hexadecimal-validati
 import { binToOct } from './binary-conversions';
 import { decToBin } from './decimal-conversions';
 
-export function hexToBin(hexadecimalNumber: string): string {
+export const hexToBin = (hexadecimalNumber: string): string => {
     let digit = 0;
     let binaryNumber = '';
     
@@ -14,9 +14,9 @@ export function hexToBin(hexadecimalNumber: string): string {
     }
 
     return binaryNumber;
-}
+};
 
-export function hexToOct(hexadecimalNumber: string): string {
+export const hexToOct = (hexadecimalNumber: string): string => {
     let binaryNumber = '';
     let octalNumber = '';
     
@@ -26,9 +26,9 @@ export function hexToOct(hexadecimalNumber: string): string {
     octalNumber = binToOct(binaryNumber);
 
     return octalNumber;
-}
+};
 
-export function hexToDec(hexadecimalNumber: string): string {
+export const hexToDec = (hexadecimalNumber: string): string => {
     let decimalNumber = '';
     
     hexadecimalNumberValidation(hexadecimalNumber);
@@ -36,4 +36,4 @@ export function hexToDec(hexadecimalNumber: string): string {
     decimalNumber = parseInt(hexadecimalNumber, 16).toString();
 
     return decimalNumber;
-}
+};

@@ -1,3 +1,3 @@
-export declare function hexToBin(hexadecimalNumber: string): string;
-export declare function hexToOct(hexadecimalNumber: string): string;
-export declare function hexToDec(hexadecimalNumber: string): string;
+export declare const hexToBin: (hexadecimalNumber: string) => string;
+export declare const hexToOct: (hexadecimalNumber: string) => string;
+export declare const hexToDec: (hexadecimalNumber: string) => string;

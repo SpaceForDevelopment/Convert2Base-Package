@@ -1,7 +1,7 @@
 import { octalNumberValidation } from '../validations/octal-validation';
 import { decToBin } from './decimal-conversions';
 
-export function octToBin(octalNumber: string): string {
+export const octToBin = (octalNumber: string): string => {
     let decimalNumber = 0;
     let binaryNumber = '';
 
@@ -11,9 +11,9 @@ export function octToBin(octalNumber: string): string {
     binaryNumber = decToBin(decimalNumber.toString());
 
     return binaryNumber;
-}
+};
 
-export function octToDec(octalNumber: string): string {
+export const octToDec = (octalNumber: string): string => {
     let decimalNumber = 0;
     let powerOfEight = 0;
 
@@ -25,9 +25,9 @@ export function octToDec(octalNumber: string): string {
     }
 
     return decimalNumber.toString();
-}
+};
 
-export function octToHex(octalNumber: string): string {
+export const octToHex = (octalNumber: string): string => {
     let decimalNumber = 0;
     let hexadecimalNumber = '';
 
@@ -37,4 +37,4 @@ export function octToHex(octalNumber: string): string {
     hexadecimalNumber = decimalNumber.toString(16);
 
     return hexadecimalNumber.toUpperCase();
-}
+};

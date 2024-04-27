@@ -1,6 +1,6 @@
 import { decimalNumberValidation } from '../validations/decimal-validation';
 
-export function decToBin(decimalNumber: string): string {
+export const decToBin = (decimalNumber: string): string => {
     let binaryNumber = '';
     let quotient = parseInt(decimalNumber);
 
@@ -12,9 +12,9 @@ export function decToBin(decimalNumber: string): string {
     }
 
     return binaryNumber;
-}
+};
 
-export function decToOct(decimalNumber: string): string {
+export const decToOct = (decimalNumber: string): string => {
     let octalNumber = '';
     let quotient = parseInt(decimalNumber);
 
@@ -26,9 +26,9 @@ export function decToOct(decimalNumber: string): string {
     }
 
     return octalNumber;
-}
+};
 
-export function decToHex(decimalNumber: string): string {
+export const decToHex = (decimalNumber: string): string => {
     let hexadecimalNumber = '';
     let quotient = parseInt(decimalNumber);
 
@@ -40,4 +40,4 @@ export function decToHex(decimalNumber: string): string {
     }
 
     return hexadecimalNumber;
-}
+};
