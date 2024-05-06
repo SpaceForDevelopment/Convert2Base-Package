@@ -30,7 +30,7 @@ To import the GF Converter package into your project, you can use one of the two
 const gfConverter = require('gf-converter');
 
 // Using ES6 imports
-import gfConverter from 'gf-converter';
+import { binToOct, binToDec, binToHex, octToBin, octToDec, octToHex, decToBin, decToOct, decToHex, hexToBin, hexToOct, hexToDec } from 'gf-converter';
 ```
 
 ## Usage
@@ -48,8 +48,11 @@ The GF Converter package has 12 functions for converting between the main existi
 * hexToOct('number')
 * hexToDec('number')
 
+<br>
+
+Example using Node.js `require()`:
 ```javascript
-import gfConverter from 'gf-converter';
+const gfConverter = require('gf-converter');
 
 console.log('Testing binToOct:');
 console.log(gfConverter.binToOct('101010')); // Output: '52'
@@ -79,13 +82,56 @@ console.log('Testing decToHex:');
 console.log(gfConverter.decToHex('42')); // Output: '2A'
 
 console.log('Testing hexToBin:');
-console.log(gfConverter.hexToBin('2A')); // Output: '101010'
+console.log(gfConverter.hexToBin('2A')); // Output: '00101010'
 
 console.log('Testing hexToOct:');
 console.log(gfConverter.hexToOct('2A')); // Output: '52'
 
 console.log('Testing hexToDec:');
 console.log(gfConverter.hexToDec('2A')); // Output: '42'
+```
+
+<br>
+
+Example using ES6 imports
+```javascript
+import { binToOct, binToDec, binToHex, octToBin, octToDec, octToHex, decToBin, decToOct, decToHex, hexToBin, hexToOct, hexToDec } from 'gf-converter';
+
+console.log('Testing binToOct:');
+console.log(binToOct('101010')); // Output: '52'
+
+console.log('Testing binToDec:');
+console.log(binToDec('101010')); // Output: '42'
+
+console.log('Testing binToHex:');
+console.log(binToHex('101010')); // Output: '2A'
+
+console.log('Testing octToBin:');
+console.log(octToBin('52')); // Output: '101010'
+
+console.log('Testing octToDec:');
+console.log(octToDec('52')); // Output: '42'
+
+console.log('Testing octToHex:');
+console.log(octToHex('52')); // Output: '2A'
+
+console.log('Testing decToBin:');
+console.log(decToBin('42')); // Output: '101010'
+
+console.log('Testing decToOct:');
+console.log(decToOct('42')); // Output: '52'
+
+console.log('Testing decToHex:');
+console.log(decToHex('42')); // Output: '2A'
+
+console.log('Testing hexToBin:');
+console.log(hexToBin('2A')); // Output: '00101010'
+
+console.log('Testing hexToOct:');
+console.log(hexToOct('2A')); // Output: '52'
+
+console.log('Testing hexToDec:');
+console.log(hexToDec('2A')); // Output: '42'
 ```
 
 You can view and run the example code for using the package at [src/test.ts](https://github.com/ArturColen/GF-Converter-Package/blob/main/src/test.ts) or via [Repl.it](https://replit.com/@ArturColen/GFConverterTest).
