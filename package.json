@@ -8,7 +8,14 @@
     "build": "tsc --declaration",
     "dev": "nodemon --watch \"src//\" --exec \"ts-node src/index.ts\" -e ts"
   },
-  "keywords": ["converter", "base-converter", "binary", "octal", "decimal", "hexadecimal"],
+  "keywords": [
+    "converter",
+    "base-converter",
+    "binary",
+    "octal",
+    "decimal",
+    "hexadecimal"
+  ],
   "author": "Artur Bomtempo Colen",
   "license": "MIT",
   "devDependencies": {
