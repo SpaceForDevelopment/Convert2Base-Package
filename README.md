@@ -1,7 +1,7 @@
 <div  align="center">
 	<h1  align="center">GF Converter Package</h1>
 	<a  href="https://gf-converter.vercel.app/" target="_blank">
-		<img  src="https://i.im.ge/2024/05/02/ZCOE9F.Banner-Documentacao-GF-Converter.png" alt="Docusaurus">
+		<img  src="https://github.com/ArturColen/GF-Converter-Package/assets/96635074/80172072-90f4-4dbf-9295-bb3e6d81c165" alt="GF Converter">
 	</a>
 </div>
 <br>
