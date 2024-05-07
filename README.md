@@ -7,7 +7,7 @@
 <br>
 <div align="center">
     <a href="https://github.com/nodejs" target="_blank"><img src="https://img.shields.io/badge/made_with-Node.js-green" alt="Made with Node.js"></a>
-    <a href="https://github.com/ArturColen/GF-Converter-Package" target="_blank"><img src="https://img.shields.io/badge/npm_package-v1.0.0-blue" alt="NPM Package version"></a>
+    <a href="https://github.com/ArturColen/GF-Converter-Package" target="_blank"><img src="https://img.shields.io/badge/npm_package-v1.0.1-blue" alt="NPM Package version"></a>
     <a href="https://gf-converter.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/status-in_production-yellow" alt="Status: in production"></a>
     <a href="https://github.com/ArturColen/GF-Converter-Package/blob/main/LICENSE.md" target="_blank"><img src="https://img.shields.io/badge/license-MIT-red" alt="MIT License"></a>
 </div>
