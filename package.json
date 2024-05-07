@@ -1,6 +1,6 @@
 {
   "name": "gf-converter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Project developed to perform basic binary conversions involving binary, octal, decimal and hexadecimal numbers.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
