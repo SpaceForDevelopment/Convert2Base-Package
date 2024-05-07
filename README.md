@@ -26,70 +26,27 @@ npm install gf-converter
 To import the GF Converter package into your project, you can use one of the two main ways of importing a library with JavaScript: through Node.js require or with ES6 imports.
 
 ```javascript
-// Using Node.js `require()`
-const gfConverter = require('gf-converter');
-
 // Using ES6 imports
 import { binToOct, binToDec, binToHex, octToBin, octToDec, octToHex, decToBin, decToOct, decToHex, hexToBin, hexToOct, hexToDec } from 'gf-converter';
+
+// Using Node.js `require()`
+const gfConverter = require('gf-converter');
 ```
 
 ## Usage
 The GF Converter package has 12 functions for converting between the main existing base numbers:
-* binToOct('number')
-* binToDec('number')
-* binToHex('number')
-* octToBin('number')
-* octToDec('number')
-* octToHex('number')
-* decToBin('number')
-* decToOct('number')
-* decToHex('number')
-* hexToBin('number')
-* hexToOct('number')
-* hexToDec('number')
-
-<br>
-
-Example using Node.js `require()`:
-```javascript
-const gfConverter = require('gf-converter');
-
-console.log('Testing binToOct:');
-console.log(gfConverter.binToOct('101010')); // Output: '52'
-
-console.log('Testing binToDec:');
-console.log(gfConverter.binToDec('101010')); // Output: '42'
-
-console.log('Testing binToHex:');
-console.log(gfConverter.binToHex('101010')); // Output: '2A'
-
-console.log('Testing octToBin:');
-console.log(gfConverter.octToBin('52')); // Output: '101010'
-
-console.log('Testing octToDec:');
-console.log(gfConverter.octToDec('52')); // Output: '42'
-
-console.log('Testing octToHex:');
-console.log(gfConverter.octToHex('52')); // Output: '2A'
-
-console.log('Testing decToBin:');
-console.log(gfConverter.decToBin('42')); // Output: '101010'
-
-console.log('Testing decToOct:');
-console.log(gfConverter.decToOct('42')); // Output: '52'
-
-console.log('Testing decToHex:');
-console.log(gfConverter.decToHex('42')); // Output: '2A'
-
-console.log('Testing hexToBin:');
-console.log(gfConverter.hexToBin('2A')); // Output: '00101010'
-
-console.log('Testing hexToOct:');
-console.log(gfConverter.hexToOct('2A')); // Output: '52'
-
-console.log('Testing hexToDec:');
-console.log(gfConverter.hexToDec('2A')); // Output: '42'
-```
+* binToOct("number")
+* binToDec("number")
+* binToHex("number")
+* octToBin("number")
+* octToDec("number")
+* octToHex("number")
+* decToBin("number")
+* decToOct("number")
+* decToHex("number")
+* hexToBin("number")
+* hexToOct("number")
+* hexToDec("number")
 
 <br>
 
@@ -132,6 +89,49 @@ console.log(hexToOct('2A')); // Output: '52'
 
 console.log('Testing hexToDec:');
 console.log(hexToDec('2A')); // Output: '42'
+```
+
+<br>
+
+Example using Node.js `require()`:
+```javascript
+const gfConverter = require('gf-converter');
+
+console.log('Testing binToOct:');
+console.log(gfConverter.binToOct('101010')); // Output: '52'
+
+console.log('Testing binToDec:');
+console.log(gfConverter.binToDec('101010')); // Output: '42'
+
+console.log('Testing binToHex:');
+console.log(gfConverter.binToHex('101010')); // Output: '2A'
+
+console.log('Testing octToBin:');
+console.log(gfConverter.octToBin('52')); // Output: '101010'
+
+console.log('Testing octToDec:');
+console.log(gfConverter.octToDec('52')); // Output: '42'
+
+console.log('Testing octToHex:');
+console.log(gfConverter.octToHex('52')); // Output: '2A'
+
+console.log('Testing decToBin:');
+console.log(gfConverter.decToBin('42')); // Output: '101010'
+
+console.log('Testing decToOct:');
+console.log(gfConverter.decToOct('42')); // Output: '52'
+
+console.log('Testing decToHex:');
+console.log(gfConverter.decToHex('42')); // Output: '2A'
+
+console.log('Testing hexToBin:');
+console.log(gfConverter.hexToBin('2A')); // Output: '00101010'
+
+console.log('Testing hexToOct:');
+console.log(gfConverter.hexToOct('2A')); // Output: '52'
+
+console.log('Testing hexToDec:');
+console.log(gfConverter.hexToDec('2A')); // Output: '42'
 ```
 
 You can view and run the example code for using the package at [src/test.ts](https://github.com/ArturColen/GF-Converter-Package/blob/main/src/test.ts) or via [Repl.it](https://replit.com/@ArturColen/GFConverterTest).
