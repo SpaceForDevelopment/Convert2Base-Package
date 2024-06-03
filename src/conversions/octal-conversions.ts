@@ -20,7 +20,7 @@ export const octToDec = (octalNumber: string): string => {
     octalNumberValidation(octalNumber);
 
     for (let i = octalNumber.length - 1; i >= 0; i--) {
-        decimalNumber += parseInt(octalNumber[i]) * (8 ** powerOfEight);
+        decimalNumber += parseInt(octalNumber[i]) * 8 ** powerOfEight;
         powerOfEight++;
     }
 

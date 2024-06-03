@@ -5,7 +5,7 @@ import { decToBin } from './decimal-conversions';
 export const hexToBin = (hexadecimalNumber: string): string => {
     let digit = 0;
     let binaryNumber = '';
-    
+
     hexadecimalNumberValidation(hexadecimalNumber);
 
     for (let i = 0; i < hexadecimalNumber.length; i++) {
@@ -19,7 +19,7 @@ export const hexToBin = (hexadecimalNumber: string): string => {
 export const hexToOct = (hexadecimalNumber: string): string => {
     let binaryNumber = '';
     let octalNumber = '';
-    
+
     hexadecimalNumberValidation(hexadecimalNumber);
 
     binaryNumber = hexToBin(hexadecimalNumber);
@@ -30,7 +30,7 @@ export const hexToOct = (hexadecimalNumber: string): string => {
 
 export const hexToDec = (hexadecimalNumber: string): string => {
     let decimalNumber = '';
-    
+
     hexadecimalNumberValidation(hexadecimalNumber);
 
     decimalNumber = parseInt(hexadecimalNumber, 16).toString();

@@ -35,7 +35,8 @@ export const decToHex = (decimalNumber: string): string => {
     decimalNumberValidation(decimalNumber);
 
     while (quotient !== 0) {
-        hexadecimalNumber = (quotient % 16).toString(16).toUpperCase() + hexadecimalNumber;
+        hexadecimalNumber =
+            (quotient % 16).toString(16).toUpperCase() + hexadecimalNumber;
         quotient = Math.floor(quotient / 16);
     }
 

@@ -1,28 +1,30 @@
 {
-  "name": "gf-converter",
-  "version": "1.0.1",
-  "description": "Project developed to perform basic binary conversions involving binary, octal, decimal and hexadecimal numbers.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc --declaration",
-    "dev": "nodemon --watch \"src//\" --exec \"ts-node src/index.ts\" -e ts"
-  },
-  "keywords": [
-    "converter",
-    "base-converter",
-    "binary",
-    "octal",
-    "decimal",
-    "hexadecimal"
-  ],
-  "author": "Artur Bomtempo Colen",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^20.12.7",
-    "nodemon": "^3.1.0",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.5"
-  }
+    "name": "gf-converter",
+    "version": "1.0.2",
+    "description": "Project developed to perform basic binary conversions involving binary, octal, decimal and hexadecimal numbers.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc --declaration",
+        "dev": "nodemon --watch \"src//\" --exec \"ts-node src/index.ts\" -e ts",
+        "format": "prettier --write ."
+    },
+    "keywords": [
+        "converter",
+        "base-converter",
+        "binary",
+        "octal",
+        "decimal",
+        "hexadecimal"
+    ],
+    "author": "Artur Bomtempo Colen",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.12.7",
+        "nodemon": "^3.1.0",
+        "prettier": "^3.3.0",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.4.5"
+    }
 }

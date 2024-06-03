@@ -23,7 +23,7 @@ export const binToDec = (binaryNumber: string): string => {
     binaryNumberValidation(binaryNumber);
 
     for (let i = binaryNumber.length - 1; i >= 0; i--) {
-        decimalNumber += parseInt(binaryNumber[i]) * (2 ** powerOfTwo);
+        decimalNumber += parseInt(binaryNumber[i]) * 2 ** powerOfTwo;
         powerOfTwo++;
     }
 
@@ -33,7 +33,7 @@ export const binToDec = (binaryNumber: string): string => {
 export const binToHex = (binaryNumber: string): string => {
     let decimalNumber = 0;
     let hexadecimalNumber = '';
-    
+
     binaryNumberValidation(binaryNumber);
 
     decimalNumber = parseInt(binToDec(binaryNumber));
