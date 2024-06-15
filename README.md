@@ -171,7 +171,7 @@ You can view and run the example code for using the package at [src/test.ts](htt
 
 ## Contact
 
-If you want to get in touch regarding matters related to this project, you have two main channels: the [developers' company website](https://gf-company.vercel.app/) or [email](mailto:arturbcolen@gmail.com).
+If you want to get in touch regarding matters related to this project, you have two main channels: the [developers' website](https://gfcodes.vercel.app/) or [email](mailto:arturbcolen@gmail.com).
 
 ## Contributors
 
