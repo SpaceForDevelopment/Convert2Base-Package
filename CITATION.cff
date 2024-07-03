@@ -1,0 +1,19 @@
+cff-version: 1.0.0
+message: Please cite this software using these metadata.
+title: To-do List
+authors:
+  - family-names: Bomtempo Colen
+    given-names: Artur
+keywords:
+  - Base Converter
+  - Binary
+  - Octal
+  - Decimal
+  - Hexadecimal
+  - NPM
+  - Node.js
+  - TypeScript
+repository-code: https://github.com/GF-Codes/GF-Converter-Package
+license: MIT
+version: 1.0.3
+date-released: 2024-05-14
