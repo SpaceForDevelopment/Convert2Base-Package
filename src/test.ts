@@ -1,14 +1,6 @@
 import { binToDec, binToHex, binToOct } from './conversions/binary-conversions';
-import {
-    decToBin,
-    decToHex,
-    decToOct,
-} from './conversions/decimal-conversions';
-import {
-    hexToBin,
-    hexToDec,
-    hexToOct,
-} from './conversions/hexadecimal-conversions';
+import { decToBin, decToHex, decToOct } from './conversions/decimal-conversions';
+import { hexToBin, hexToDec, hexToOct } from './conversions/hexadecimal-conversions';
 import { octToBin, octToDec, octToHex } from './conversions/octal-conversions';
 
 console.log('Testing binToOct:');
