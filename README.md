@@ -185,7 +185,7 @@ The complete Convert2Base project was developed by Artur Bomtempo and Letícia F
 
 ## License
 
-Copyright (c) 2025 Artur Bomtempo Colen e Letícia Silva França
+Copyright (c) 2025 Artur Bomtempo Colen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
