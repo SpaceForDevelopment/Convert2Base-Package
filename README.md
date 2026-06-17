@@ -10,7 +10,7 @@
 <br>
 <div align="center">
     <a href="https://github.com/nodejs" target="_blank"><img src="https://img.shields.io/badge/made_with-Node.js-green" alt="Made with Node.js"></a>
-    <a href="https://github.com/ArturColen/Convert2Base-Package" target="_blank"><img src="https://img.shields.io/badge/npm_package-v1.0.5-blue" alt="NPM Package version"></a>
+    <a href="https://github.com/ArturColen/Convert2Base-Package" target="_blank"><img src="https://img.shields.io/badge/npm_package-v1.0.7-blue" alt="NPM Package version"></a>
     <a href="https://convert2base.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/status-in_production-yellow" alt="Status: in production"></a>
     <a href="https://github.com/ArturColen/Convert2Base-Package/blob/main/LICENSE.md" target="_blank"><img src="https://img.shields.io/badge/license-MIT-red" alt="MIT License"></a>
 </div>
